@@ -871,8 +871,8 @@ class EnhancedPMPredictor:
             return self.simulate_ai_prediction(horse_data)
     
     def _engineer_features(self, horse_data: Dict) -> List[float]:
-        """Engineer comprehensive features for prediction"""
-        base_features = [
+        """Engineer exactly 10 features to match trained model"""
+        return [
             horse_data.get('recent_avg_form', 5.0),
             horse_data.get('driver_win_rate', 0.15),
             horse_data.get('course_success_rate', 0.1),
@@ -880,7 +880,7 @@ class EnhancedPMPredictor:
             horse_data.get('weight', 60.0),
             horse_data.get('age', 5.0),
             horse_data.get('days_since_last_race', 30.0),
-            horse_data.get('prize_money', 0.0),
+            horse_data.get('prize_money', 0.0) / 50000.0,  # Normalize prize
             horse_data.get('track_condition_bonus', 0.0),
             horse_data.get('recent_improvement', 0.0)
         ]
