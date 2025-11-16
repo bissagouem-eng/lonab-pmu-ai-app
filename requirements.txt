@@ -1,0 +1,12 @@
+streamlit
+pandas
+numpy
+requests
+beautifulsoup4
+plotly
+scikit-learn
+joblib
+pdfplumber
+pillow
+scipy
+selenium
