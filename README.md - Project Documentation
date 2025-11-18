@@ -1,0 +1,22 @@
+# 🏆 TROPHY QUANTUM LONAB AI v20
+
+Ultimate AI-powered horse racing analytics platform with real-time predictions.
+
+## 🚀 Quick Start
+
+1. **Copy files to your GitHub repo**
+2. **Update Google Drive URLs** in `app.py` (line 18-22)
+3. **Deploy to Streamlit Cloud**
+
+## 📦 Installation
+
+```bash
+# Clone your repository
+git clone https://github.com/yourusername/trophy-quantum-lonab.git
+cd trophy-quantum-lonab
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the application
+streamlit run app.py
